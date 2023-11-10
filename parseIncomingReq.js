@@ -19,7 +19,7 @@ app.use('/add-post', (req, res) => {
     `);
 });
 
-app.use('/posts', (req, res) => {
+app.post('/posts', (req, res) => {
 	console.log(req.body);
     
     // This will create a file named 'post.txt' and put request in it
